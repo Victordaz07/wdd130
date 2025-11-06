@@ -3,34 +3,37 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My Favorite City - Santo Domingo</title>
-    <meta name="description" content="A simple webpage about my favorite city, Santo Domingo.">
-    <meta name="author" content="Victor Ruiz">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 130 | Victor Ruiz Bello</title>
+    <meta name="description" content="WDD 130 home page for Victor Ruiz Bello.">
+    <meta name="author" content="Victor Ruiz Bello">
 </head>
 
 <body>
     <header>
-        <h1>My Favorite City</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="wwr/">Rafting Site</a>
+        </nav>
     </header>
 
     <main>
-        <h2>Santo Domingo, Dominican Republic</h2>
+        <h1>WDD 130</h1>
+
         <img src="images/santo-domingo.jpg" alt="Santo Domingo city view" width="600">
 
         <p>
-            Santo Domingo is my favorite city because it feels both historic and alive. It is the capital of the
-            Dominican Republic
-            and the heart of my country culture. I love walking through the Colonial Zone and visiting the Santo
-            Domingo Temple,
-            which reminds me of peace and faith in the middle of a busy city. The people, the food, and the ocean breeze
-            make this
-            city truly special to me.
+            Hi! I’m Victor Ruiz Bello. I’m studying web development in WDD 130.
+            I enjoy learning HTML and CSS and building simple, clean web pages.
+            This site will hold my weekly work for the course.
         </p>
     </main>
 
     <footer>
-        <p>Victor Ruiz Bello</p>
+        <p>© <span id="year"></span> Victor Ruiz Bello</p>
+        <script>
+            document.getElementById('year').textContent = new Date().getFullYear();
+        </script>
     </footer>
 </body>
 
