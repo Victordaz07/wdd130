@@ -1,67 +1,71 @@
-/* General layout */
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-}
+/* Reset básico y tipografía */
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height: 1.5; }
 
-/* Navigation bar */
+/* nav: background-color y padding */
 nav {
-  background-color: #003366;
-  padding: 1rem;
+  background-color: #0c3d6b;
+  padding: 12px 16px;
 }
 
+/* nav a: color, padding, display:block */
 nav a {
-  color: white;
-  padding: 0.5rem 1rem;
-  display: inline-block;
+  color: #ffffff;
+  padding: 8px 12px;
+  display: block;
   text-decoration: none;
 }
 
-/* Main section */
+/* main: max-width */
 main {
-  max-width: 800px;
-  margin: 1rem auto;
-  padding: 1rem;
+  max-width: 900px;
+  margin: 16px auto;
+  padding: 0 16px;
 }
 
+/* h1: color */
 h1 {
-  color: #003366;
+  color: #0c3d6b;
+  margin: 16px 0 12px;
 }
 
+/* main img: width, height, border, padding, box-shadow */
 main img {
-  width: 200px;
+  width: 260px;
   height: auto;
-  border: 2px solid #ccc;
-  padding: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border: 2px solid #cbd5e1;
+  padding: 6px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+  display: block;
+  margin-bottom: 12px;
 }
 
-/* Aside section */
+/* aside: width, margin, border, padding, background-color, color */
 aside {
-  width: 250px;
-  margin: 1rem auto;
-  border: 1px solid #ccc;
-  padding: 1rem;
-  background-color: #f5f5f5;
-  color: #333;
+  width: 900px;
+  max-width: 900px;
+  margin: 24px auto;
+  border: 1px solid #cbd5e1;
+  padding: 12px 16px;
+  background-color: #f8fafc;
+  color: #0f172a;
 }
 
+/* aside img: width:200px; height:auto */
 aside img {
   width: 200px;
   height: auto;
+  display: block;
 }
 
-/* Paragraphs */
-p {
-  padding: 0;
-}
+/* p: padding: 0; */
+p { padding: 0; }
 
-/* Footer */
+/* footer: margin-top, border-top, text-align:center */
 footer {
-  margin-top: 1rem;
-  border-top: 2px solid #ccc;
+  margin-top: 24px;
+  border-top: 1px solid #e2e8f0;
   text-align: center;
-  padding: 1rem 0;
+  padding: 12px 16px 32px;
 }
