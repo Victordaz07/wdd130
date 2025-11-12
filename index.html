@@ -1,46 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
+/* NAV */
+nav {
+background-color: #f2f2f2;
+padding: 1rem;
+}
+nav a {
+color: #333;
+padding: 0.5rem 0.75rem;
+display: block;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 130 | Victor Ruiz Bello</title>
-    <meta name="description" content="WDD 130 Home Page for Victor Ruiz Bello. Learning web fundamentals at BYU-Idaho.">
-    <meta name="author" content="Victor Ruiz Bello">
-    <link rel="stylesheet" href="styles/styles.css">
-</head>
+/* MAIN */
+main {
+max-width: 900px;
+margin: 1rem auto;
+}
+h1 {
+color: #1a3a6e;
+}
+main img {
+width: 100%;
+height: auto;
+border: 1px solid #ddd;
+padding: 4px;
+box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
 
-<body>
-    <header>
-        <nav>
-            <a href="#">Home</a>
-            <a href="wwr/">Rafting Website</a>
-        </nav>
-    </header>
+/* ASIDE */
+aside {
+width: 900px;
+margin: 1rem auto;
+border: 1px solid #e0e0e0;
+padding: 1rem;
+background-color: #fafafa;
+color: #333;
+}
+aside img {
+width: 200px;
+height: auto;
+}
 
-    <main>
-        <h1>WDD 130</h1>
+/* P */
+p {
+padding: 0;
+}
 
-        <img src="images/profile.jpg" alt="Profile photo of Victor Ruiz Bello">
-
-        <p>
-            Hi! I’m Victor Ruiz Bello. I’m studying web development in WDD 130 at BYU-Idaho.
-            I love learning how to build clean, organized, and responsive websites using HTML and CSS.
-            This site will host all my weekly projects for the course.
-        </p>
-    </main>
-
-    <aside>
-        <h2>Temple Highlight</h2>
-        <img src="images/salt-lake-temple.jpg" alt="The Salt Lake Temple.">
-    </aside>
-
-    <footer>
-        <p>© <span id="year"></span> Victor Ruiz Bello</p>
-        <script>
-            document.getElementById('year').textContent = new Date().getFullYear();
-        </script>
-    </footer>
-</body>
-
-</html>
+/* FOOTER */
+footer {
+margin-top: 2rem;
+border-top: 1px solid #e5e5e5;
+text-align: center;
+padding: 0.75rem 0;
+}
