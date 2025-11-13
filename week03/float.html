@@ -2,27 +2,32 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Float Property</title>
-    <link rel="stylesheet" href="styles/float.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>W03 | Float Demo</title>
+    <meta name="description" content="Week 03 float demo with clearfix." />
+    <meta name="author" content="Victor Ruiz Bello" />
+    <link rel="stylesheet" href="styles/float.css" />
 </head>
 
 <body>
-    <main>
-        <h1>CSS Float Example; using float:right;</h1>
+    <header class="bar">Float &amp; Clearfix</header>
 
-        <div class="col1">
-            <img src="http://dummyimage.com/200x300/333/fff/" alt="placeholder image" width="200" height="300">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil dolorum repudiandae commodi architecto
-                non! Quam sunt dolorem autem rerum culpa nam dicta cum, minima asperiores totam ea esse ut molestiae.
-                Nostrum eaexcepturi. Mollitia ex quis totam.</p>
+    <main class="container">
+        <h1>Floating an Image Right</h1>
 
+        <div class="clearfix">
+            <img src="images/profile.jpg" alt="Victor profile" class="float-right" />
+            <p>
+                Este párrafo envuelve una imagen flotada a la derecha. <code>float</code> se usaba para
+                maquetación antigua; hoy se prefiere Flexbox y Grid, pero sigue útil para que el texto
+                rodee imágenes como en este ejemplo.
+            </p>
+            <p>
+                El helper <code>.clearfix</code> usa un pseudo-elemento para limpiar el float y que el
+                contenedor abarque la imagen flotada.
+            </p>
         </div>
-        <footer>©️ Footer stuff ... Lorem ipsum <br><em>Note that this footer element is in line with the floated
-                image</em>.
-        </footer>
-
     </main>
 </body>
 

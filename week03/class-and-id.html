@@ -2,73 +2,52 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Class vs ID Attributes</title>
-    <link rel="stylesheet" href="styles/class-and-id.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>W03 | Class & ID</title>
+    <meta name="description" content="Week 03 demo showing the difference between CSS classes and IDs." />
+    <meta name="author" content="Victor Ruiz Bello" />
+    <link rel="stylesheet" href="styles/class-and-id.css" />
 </head>
 
 <body>
-    <h1>Understanding Class and ID Attributes</h1>
-    <p>Both <code>class</code> and <code>id</code> are HTML attributes used to identify and style any element, but they
-        serve different purposes. <code>class</code> defines a group of elements, while <code>id</code> uniquely
-        identifies a single element.</p>
-    <p>As a developer, you decide what the assigned values or identifiers should be for classed and ids. These
-        identifiers should be
-        descriptive and follow a consistent naming convention. For example, "<strong>box</strong>" is a good class name
-        for a generic container.</p>
-    <div class="box">
-        <p>The HTML div has a class of <strong>box</strong>.</p>
-        <pre><code class="html">&lt;div class="box"&gt; ... &lt;/div&gt;</code></pre>
-        and the CSS selector is (note the dot notation)
-        <pre><code class="css">.box {
-  margin: 20px 0;
-  border: 1px solid rgb(0 0 0 / 10%);
-  padding: 10px;
-  background-color: #ddd; 
-}</code></pre>
-    </div>
+    <header>
+        <h1>W03 – Class &amp; ID</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="class-and-id.html" aria-current="page">Class &amp; ID</a></li>
+                <li><a href="float.html">Float</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="box highlight">
-        <p>This div has two classes assigned to it of <strong>box</strong> and <strong>highlight</strong>. So the div
-            will have the styles of both classes applied.</p>
-        <pre><code class="html">&lt;div class="box highlight"&gt; ... &lt;/div&gt;</code></pre>
-        and the CSS selector for highlight is
-        <pre><code class="css">.highlight {
-  background-color: #efefaa;
-  border-radius: 25px;
-  padding: 25px;
-}</code></pre>
-<p>Some declarations (<code>background-color</code> and <code>padding</code>, from "box" are overwritten by the same declarations in "highlight" becuase highlight appears after box in the CSS cascade.</p>
-    </div>
+    <main>
+        <section id="intro" class="card">
+            <h2>What is an <code>id</code>?</h2>
+            <p><code>id</code> identifica un único elemento en la página. En CSS se selecciona con el
+                numeral: <code>#intro</code>.</p>
+        </section>
 
-    <div id="note" class="box">
-        <p>This is a div with a unique ID "note" and the same "box" class.</p>
-        <pre><code class="html">&lt;div id="note" class="box"&gt; ... &lt;/div&gt;</code></pre>
-        and the CSS selector is
-        <pre><code class="css">#note {
-  background-color: #333;
-  color: white;
-  width: fit-content;
-}</code></pre>
-    </div>
+        <article class="card highlight">
+            <h2>What is a <code>class</code>?</h2>
+            <p><code>class</code> se puede reutilizar en muchos elementos. En CSS se selecciona con un punto:
+                <code>.card</code> o <code>.highlight</code>.
+            </p>
+        </article>
 
-    <div id="note">
-        <p>Testing the <code>note</code> ID.</p>
-    </div>
+        <section class="card">
+            <h2>Reusable Card</h2>
+            <p>Este bloque también usa la clase <code>.card</code> para compartir estilos.</p>
+        </section>
+    </main>
 
-    <section id="best-practice">
-        <ul>
-            <li><strong>DO NOT</strong> use the same ID on multiple elements</li>
-            <li><strong>DO NOT</strong> use IDs for styling that applies to many elements</li>
-            <li><strong>DO NOT</strong> start class or ID names with numbers</li>
-            <li><strong>DO NOT</strong> use spaces in class or ID names (use hyphens or underscores)</li>
-        </ul>
-    </section>
-
-
-
-
+    <footer>
+        <p>© <span id="year"></span> Victor Ruiz Bello</p>
+    </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 
 </html>

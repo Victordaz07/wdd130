@@ -1,61 +1,148 @@
-* { box-sizing: border-box; }
-html, body { margin: 0; padding: 0; }
-body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height: 1.5; }
+/* =========================================================
+   WDD130 - Week 3
+   - Semantic HTML
+   - CSS Variables
+   - Class vs ID
+   - Float (aside)
+   - Position (badge)
+   - Comentarios descriptivos
+   ========================================================= */
 
-nav {
-  background-color: #0c3d6b;
-  padding: 12px 16px;
+:root {
+  --brand: #0c3d6b;
+  --brand-ink: #ffffff;
+  --ink: #0f172a;
+  --muted: #475569;
+  --paper: #ffffff;
+  --panel: #f8fafc;
+  --line: #e2e8f0;
+  --shadow: 0 10px 24px rgba(0,0,0,.15);
 }
 
-nav a {
-  color: #ffffff;
-  padding: 8px 12px;
-  display: block;
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--ink);
+  background: #f5f7fb;
+  line-height: 1.6;
+}
+
+#site-header {
+  background: var(--brand);
+}
+.topnav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.75rem 1rem; /* W02: nav padding */
+  background-color: var(--brand); /* W02: nav background-color */
+}
+.topnav a {
+  color: var(--brand-ink);      /* W02: nav a color */
+  padding: 0.5rem 0.75rem;      /* W02: nav a padding */
+  display: inline-block;        /* W02: nav a display:block o inline-block */
   text-decoration: none;
+  border-radius: 0.375rem;
+}
+.topnav a:hover {
+  background: rgba(255,255,255,.12);
+}
+.topnav .brand {
+  font-weight: 700;
+}
+
+.page-wrap {
+  max-width: 1100px;
+  margin: 1rem auto;
+  padding: 0 1rem;
+  /* contenedor del main + aside flotado */
+}
+
+.sidebar {
+  float: right;            /* flota a la derecha en desktop */
+  width: 280px;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  color: var(--ink);
+  padding: 1rem;
+  margin: 0 0 1rem 1rem;   /* separa del main */
+}
+.sidebar__title { margin: 0 0 .5rem; }
+.sidebar__img {
+  width: 200px;            /* W02: aside img width 200px */
+  height: auto;            /* W02: aside img height auto */
+  display: block;
+  margin-bottom: .5rem;
+}
+.sidebar__text { margin: 0; }
+
+#main-content {
+  overflow: auto;
+  min-height: 1px;
 }
 
 main {
   max-width: 900px;
-  margin: 16px auto;
-  padding: 0 16px;
+  margin: 0 auto;
 }
 
 h1 {
-  color: #0c3d6b;
-  margin: 16px 0 12px;
+  color: var(--brand);
+  margin: .5rem 0 1rem;
 }
 
-main img {
-  width: 260px;
-  height: auto;
-  border: 2px solid #cbd5e1;
-  padding: 6px;
-  box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+.card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  position: relative; /* para posicionar la .badge */
+}
+.badge {
+  position: absolute;   /* W03: position absolute */
+  top: 10px;
+  right: 10px;
+  background: #16a34a;
+  color: #fff;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 999px;
+}
+.hero-card__img {
+  width: 260px;                     /* W02: main img width */
+  height: auto;                     /* W02: main img height */
+  border: 2px solid #cbd5e1;        /* W02: main img border */
+  padding: 6px;                     /* W02: main img padding */
+  box-shadow: 0 4px 14px rgba(0,0,0,.15); /* W02: main img box-shadow */
   display: block;
-  margin-bottom: 12px;
+  margin-bottom: .75rem;
 }
+.hero-card__body p { margin: 0; }
 
-aside {
-  width: 900px;
-  max-width: 900px;
-  margin: 24px auto;
-  border: 1px solid #cbd5e1;
-  padding: 12px 16px;
-  background-color: #f8fafc;
-  color: #0f172a;
-}
-
-aside img {
-  width: 200px;
-  height: auto;
-  display: block;
+.section {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
 }
 
 p { padding: 0; }
 
-footer {
-  margin-top: 24px;
-  border-top: 1px solid #e2e8f0;
-  text-align: center;
-  padding: 12px 16px 32px;
+#site-footer {
+  margin-top: 1rem;           /* W02: footer margin-top */
+  border-top: 2px solid var(--line); /* W02: footer border-top */
+  text-align: center;         /* W02: footer text-align center */
+  padding: 1rem 0;
+}
+
+@media (max-width: 860px) {
+  .sidebar {
+    float: none;   /* cancela el float en móvil */
+    width: 100%;
+    margin: 0 0 1rem 0;
+  }
 }

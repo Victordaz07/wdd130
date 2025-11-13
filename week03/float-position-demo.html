@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>W03 | Float & Position</title>
+    <meta name="description" content="Demo for float and CSS positioning." />
+    <meta name="author" content="Victor Ruiz Bello" />
+    <link rel="stylesheet" href="styles/float.css" />
+</head>
+
+<body>
+    <header class="bar">Float + Position</header>
+
+    <main class="container">
+        <section class="demo-card clearfix">
+            <img src="images/profile.jpg" alt="Victor profile" class="float-left" />
+            <h2>Float Left</h2>
+            <p>El texto fluye alrededor de una imagen flotada a la izquierda. El contenedor tiene
+                <code>.clearfix</code> para expandirse alrededor del float.
+            </p>
+        </section>
+
+        <section class="demo-card pos-rel">
+            <span class="badge">ABS</span>
+            <h2>Absolute Badge</h2>
+            <p>Esta caja es <code>position: relative</code> y la etiqueta es
+                <code>position: absolute</code> anclada a la esquina superior derecha.
+            </p>
+        </section>
+    </main>
+</body>
+
+</html>

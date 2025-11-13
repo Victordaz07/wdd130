@@ -1,26 +1,28 @@
-main {
-    width: 75vw;
-    margin: 1rem auto;
-    background-color: #eee;
-    padding: 1rem;
-    border: 1px solid rgb(0 0 0 / .1);
+/* Week 03 – float & position demo */
+:root{ --ink:#111; --bg:#f6f7fb; --card:#fff; --bar:#2d2f33 }
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0; font-family:Inter,system-ui,Segoe UI,Roboto,Arial,Helvetica,sans-serif; color:var(--ink); background:var(--bg)}
+
+.bar{background:var(--bar); color:#fff; padding:1rem 2rem; font-weight:600; box-shadow:0 2px 8px rgba(0,0,0,.25)}
+.container{max-width:900px; margin:2rem auto; padding:0 1rem}
+h1{margin:.5rem 0 1rem}
+
+/* float helpers */
+.float-right{ float:right; width:220px; height:auto; margin:0 0 1rem 1rem; border-radius:10px; box-shadow:0 6px 18px rgba(0,0,0,.15) }
+.float-left{  float:left;  width:220px; height:auto; margin:0 1rem 1rem 0; border-radius:10px; box-shadow:0 6px 18px rgba(0,0,0,.15) }
+.clearfix::after{ content:""; display:block; clear:both }
+
+/* card */
+.demo-card{
+  background:var(--card);
+  border:1px solid #e5e7eb;
+  border-radius:12px;
+  padding:1rem 1.25rem;
+  box-shadow:0 8px 24px rgba(0,0,0,.06);
+  margin-bottom:1rem;
 }
 
-p {
-    text-align: justify;
-}
-
-.col1 img {
-    float: right;
-    margin: 0 0 15px 15px;
-    border: 1px solid rgba(0 0 0 / .3);
-    box-shadow: 0 0 30px #777;
-}
-
-footer {
-    border-top: 1px solid #555;
-    padding-top: 5px;
-    /* Remove the comment below and observe the results. */
-
-    /* clear: both; */
-}
+/* positioning */
+.pos-rel{ position:relative }
+.badge{ position:absolute; top:.75rem; right:.75rem; background:#111; color:#fff; font-size:.75rem; padding:.25rem .5rem; border-radius:.5rem; letter-spacing:.04em }

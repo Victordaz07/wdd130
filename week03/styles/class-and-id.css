@@ -1,58 +1,67 @@
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0 40px;
+:root{
+  --ink:#222;
+  --bg:#f5f7fb;
+  --card:#ffffff;
+  --muted:#6b7280;
+  --primary:#2563eb;
 }
 
-h1 {
-    border-bottom: 1px solid rgb(0 110 182);
-    padding-bottom: 0;
+*{box-sizing:border-box}
+html,body{height:100%}
+
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,Helvetica,sans-serif;
+  color:var(--ink);
+  background:var(--bg);
+  line-height:1.5;
 }
 
-
-
-p {
-    margin: 0;
+header{
+  background:#1f2937;
+  color:#fff;
+  padding:1rem 2rem;
+  box-shadow:0 2px 8px rgba(0,0,0,.25);
 }
-
-code {
-    color: darkgreen;
-    font-weight: 700;
-    font-size: 1.4rem;
+header h1{margin:.25rem 0 0; font-size:1.5rem}
+nav ul{
+  list-style:none;
+  display:flex;
+  gap:1rem;
+  margin:.5rem 0 0;
+  padding:0;
 }
-
-/* Class examples - can be reused */
-
-.box {
-    margin: 20px 0;
-    border: 1px solid rgb(0 0 0 / 10%);
-    padding: 10px;
-    background-color: #ddd; /* this is shorthand for #dddddd */
+nav a{
+  color:#fff;
+  text-decoration:none;
+  padding:.25rem .5rem;
+  border-radius:.5rem;
 }
+nav a:hover{background:rgba(255,255,255,.12)}
 
-.highlight {
-    background-color: #efefaa;
-    border-radius: 25px;
-    padding: 25px;
+main{
+  max-width:960px;
+  margin:2rem auto;
+  padding:0 1rem 2rem;
 }
-
-/* ID examples - should be unique */
-
-#note {
-    background-color: #333;
-    color: white;
-    width: fit-content;
+.card{
+  background:var(--card);
+  border:1px solid #e5e7eb;
+  border-radius:12px;
+  padding:1rem 1.25rem;
+  box-shadow:0 8px 24px rgba(0,0,0,.06);
 }
+.card + .card{ margin-top:1rem; }
 
-#note code {
-    color: yellow;
+#intro{ border-left:6px solid var(--primary) }
+
+.highlight{ background:#fffceb }
+
+footer{
+  max-width:960px;
+  margin:2rem auto 0;
+  padding:1rem;
+  border-top:1px solid #e5e7eb;
+  text-align:center;
+  color:var(--muted);
 }
-
-#best-practice {
-    background: linear-gradient(135deg, #000 0%, #999 100%);
-    color: white;
-    border-radius: 20px;
-    padding: 20px
-}
-
