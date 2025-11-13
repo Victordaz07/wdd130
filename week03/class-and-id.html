@@ -2,61 +2,56 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>W03 | Class & ID</title>
-    <meta name="description" content="Week 03 — clean demo using CSS classes and IDs with a simple, polished layout." />
-    <meta name="author" content="Victor Ruiz Bello" />
-    <link rel="stylesheet" href="styles/class-and-id.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W03 – Class & ID</title>
+    <link rel="stylesheet" href="styles/class-and-id.css">
 </head>
 
 <body>
+
     <header>
-        <div class="wrap">
-            <h1>W03 — Class &amp; ID</h1>
-            <nav aria-label="Primary">
-                <a href="../index.html">Home</a>
-                <a href="class-and-id.html" aria-current="page">Class &amp; ID</a>
-                <a href="float.html">Float</a>
-            </nav>
-        </div>
+        <h1>W03 – Class & ID</h1>
+        <nav>
+            <ul>
+                <li><a href="class-and-id.html">Class & ID</a></li>
+                <li><a href="class-id-demo.html">Demo</a></li>
+                <li><a href="float.html">Float</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main class="wrap">
-        <section id="intro" class="card">
-            <h2>What is an <span class="mono">id</span>?</h2>
+    <main>
+
+        <section>
+            <h2>What is an <span id="sample-id">id</span>?</h2>
             <p>
-                Un <strong>id</strong> identifica un único elemento en una página. Úsalo para marcar piezas
-                puntuales que necesitan un estilo o anclaje específico.
+                An <strong>id</strong> identifies a single, unique element on the page.
+                In CSS it is selected using the hash symbol: <code>#intro</code>.
             </p>
         </section>
 
-        <section class="card highlight">
-            <h2>What is a <span class="mono">class</span>?</h2>
+        <section class="highlight">
+            <h2>What is a <span class="sample-class">class</span>?</h2>
             <p>
-                Una <strong>class</strong> se utiliza en varios elementos a la vez para aplicar el mismo
-                estilo y mantener consistencia visual a lo largo del sitio.
+                A <strong>class</strong> can be reused on many elements.
+                In CSS it is selected with a period: <code>.card</code> or <code>.highlight</code>.
             </p>
         </section>
 
         <section class="card">
-            <h2>Example card</h2>
+            <h2>Reusable Card</h2>
             <p>
-                Esta tarjeta muestra el mismo estilo reutilizable aplicado con una clase. Mantiene el diseño
-                limpio y uniforme sin repetir código.
+                This block uses the <code>.card</code> class to share consistent styling.
             </p>
         </section>
+
     </main>
 
     <footer>
-        <div class="wrap">
-            <p>© <span id="year"></span> Victor Ruiz Bello</p>
-        </div>
+        <p>© 2025 Victor Ruiz Bello</p>
     </footer>
 
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
 </body>
 
 </html>

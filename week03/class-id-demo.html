@@ -2,32 +2,58 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>W03 | Class vs ID</title>
-    <meta name="description" content="Demo for CSS class and id selectors with comments." />
-    <meta name="author" content="Victor Ruiz Bello" />
-    <link rel="stylesheet" href="../styles/styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W03 – Class & ID Demo</title>
+    <link rel="stylesheet" href="styles/class-and-id.css">
 </head>
 
 <body>
-    <!-- Comentarios explicativos (W03 commenting) -->
-    <main style="max-width: 900px; margin: 1rem auto; background:#fff; border:1px solid #e2e8f0; padding:1rem;">
-        <h1>Class vs ID Demo</h1>
 
-        <!-- ID: único -->
-        <div id="unique-box" class="card" style="border-color:#c7d2fe;">
-            <p><strong>#unique-box</strong> (ID) — un selector que debe usarse para un elemento único.</p>
-        </div>
+    <header>
+        <h1>W03 – Class & ID Demo</h1>
+        <nav>
+            <ul>
+                <li><a href="class-and-id.html">Class & ID</a></li>
+                <li><a href="class-id-demo.html">Class/ID Demo</a></li>
+                <li><a href="float.html">Float</a></li>
+                <li><a href="float-position-demo.html">Float & Position Demo</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <!-- class: reutilizable -->
-        <div class="card demo-class">
-            <p>.demo-class (class) — selector reutilizable para varios elementos.</p>
-        </div>
-        <div class="card demo-class">
-            <p>.demo-class (class) — nuevamente aplicado aquí.</p>
-        </div>
+    <main>
+
+        <section id="intro">
+            <h2>Using ids</h2>
+            <p>
+                This section has an <code>id="intro"</code>. An id should be unique on the page and
+                is often used for navigation, JavaScript hooks, or one-off styling.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>Card with .card Class</h2>
+            <p>
+                This block uses the shared <code>.card</code> class. Any element that uses this
+                class will receive the same border, padding, and background.
+            </p>
+        </section>
+
+        <section class="card highlight">
+            <h2>Highlighted Card</h2>
+            <p>
+                This card uses both <code>.card</code> and <code>.highlight</code>. Multiple classes
+                can be combined on the same element to layer styles.
+            </p>
+        </section>
+
     </main>
+
+    <footer>
+        <p>© 2025 Victor Ruiz Bello</p>
+    </footer>
+
 </body>
 
 </html>

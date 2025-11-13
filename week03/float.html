@@ -2,33 +2,53 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>W03 | Float Demo</title>
-    <meta name="description" content="Week 03 float demo with clearfix." />
-    <meta name="author" content="Victor Ruiz Bello" />
-    <link rel="stylesheet" href="styles/float.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W03 – Float</title>
+    <link rel="stylesheet" href="styles/float.css">
 </head>
 
 <body>
-    <header class="bar">Float &amp; Clearfix</header>
 
-    <main class="container">
-        <h1>Floating an Image Right</h1>
+    <header>
+        <h1>W03 – Float</h1>
+        <nav>
+            <ul>
+                <li><a href="class-and-id.html">Class & ID</a></li>
+                <li><a href="class-id-demo.html">Class/ID Demo</a></li>
+                <li><a href="float.html">Float</a></li>
+                <li><a href="float-position-demo.html">Float & Position Demo</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <div class="clearfix">
-            <img src="images/profile.jpg" alt="Victor profile" class="float-right" />
+    <main class="demo-container">
+
+        <h2>Floating an Image</h2>
+
+        <section class="clearfix">
+            <img src="https://assets.churchofjesuschrist.org/46/1c/461c3b4bb3a4bb5381d5e8f699f7d0b5628a74e3/payson_utah_temple_exterior.jpeg"
+                alt="Payson Utah Temple" class="float-image">
+
             <p>
-                Este párrafo envuelve una imagen flotada a la derecha. <code>float</code> se usaba para
-                maquetación antigua; hoy se prefiere Flexbox y Grid, pero sigue útil para que el texto
-                rodee imágenes como en este ejemplo.
+                This paragraph wraps around the image because the image is floated to the right.
+                The float property allows text to flow around visual elements, such as photos or
+                diagrams, while keeping the layout compact.
             </p>
+
             <p>
-                El helper <code>.clearfix</code> usa un pseudo-elemento para limpiar el float y que el
-                contenedor abarque la imagen flotada.
+                Floats are often used for simple layouts or to place images next to text. In modern
+                layouts we usually prefer Flexbox or CSS Grid, but understanding floats is still
+                important when reading or maintaining older code.
             </p>
-        </div>
+        </section>
+
     </main>
+
+    <footer>
+        <p>© 2025 Victor Ruiz Bello</p>
+    </footer>
+
 </body>
 
 </html>

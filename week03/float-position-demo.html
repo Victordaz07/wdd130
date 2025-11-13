@@ -2,34 +2,58 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>W03 | Float & Position</title>
-    <meta name="description" content="Demo for float and CSS positioning." />
-    <meta name="author" content="Victor Ruiz Bello" />
-    <link rel="stylesheet" href="styles/float.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W03 – Float & Position Demo</title>
+    <link rel="stylesheet" href="styles/float.css">
 </head>
 
 <body>
-    <header class="bar">Float + Position</header>
 
-    <main class="container">
-        <section class="demo-card clearfix">
-            <img src="images/profile.jpg" alt="Victor profile" class="float-left" />
-            <h2>Float Left</h2>
-            <p>El texto fluye alrededor de una imagen flotada a la izquierda. El contenedor tiene
-                <code>.clearfix</code> para expandirse alrededor del float.
-            </p>
+    <header>
+        <h1>W03 – Float & Position Demo</h1>
+        <nav>
+            <ul>
+                <li><a href="class-and-id.html">Class & ID</a></li>
+                <li><a href="class-id-demo.html">Class/ID Demo</a></li>
+                <li><a href="float.html">Float</a></li>
+                <li><a href="float-position-demo.html">Float & Position Demo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="demo-container">
+
+        <section>
+            <h2>Float Example</h2>
+            <div class="float-box clearfix">
+                <img src="https://assets.churchofjesuschrist.org/2a/83/2a837b8aa2b0ff8eb380e33e4dc1b74e7b38e3b9/rome_italy_temple_exterior.jpeg"
+                    alt="Rome Italy Temple" class="float-image-small">
+                <p>
+                    This card uses <code>float: left;</code> on the image so that the text
+                    flows around it. Floats remove the element from the normal document flow,
+                    which can sometimes make layouts harder to control.
+                </p>
+            </div>
         </section>
 
-        <section class="demo-card pos-rel">
-            <span class="badge">ABS</span>
-            <h2>Absolute Badge</h2>
-            <p>Esta caja es <code>position: relative</code> y la etiqueta es
-                <code>position: absolute</code> anclada a la esquina superior derecha.
-            </p>
+        <section>
+            <h2>Position Example</h2>
+            <div class="position-container">
+                <div class="position-box">
+                    <p>This box is using <code>position: relative;</code>.</p>
+                    <p>The small badge in the corner is <code>position: absolute;</code> inside it.</p>
+                    <span class="position-badge">NEW</span>
+                </div>
+            </div>
         </section>
+
     </main>
+
+    <footer>
+        <p>© 2025 Victor Ruiz Bello</p>
+    </footer>
+
 </body>
 
 </html>
