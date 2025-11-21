@@ -1,135 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta name="description"
-        content="Contact Dry Oar White Water Rafting for our address, phone, email, map location, and questions about trips or reservations.">
+        content="Contact Dry Oar White Water Rafting for questions, reservations, hours, and location information.">
     <meta name="author" content="Victor Ruiz">
+
     <title>Contact Us | Dry Oar Rafting</title>
+
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
 
     <header>
-        <img class="logo" src="images/logo.png" alt="Dry Oar White Water Rafting logo">
+        <img src="images/logo.png" alt="Dry Oar Rafting Logo">
+
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="trips.html">Trips</a>
-            <a href="contact.html" class="active">Contact Us</a>
+            <a href="contact.html">Contact Us</a>
         </nav>
     </header>
 
     <main>
-        <h1>Contact Dry Oar White Water Rafting</h1>
 
-        <div class="contact-grid">
-            <!-- COLUMNA IZQUIERDA: INFO + MAPA -->
-            <section class="contact-info">
-                <h2>Company Information</h2>
-                <p>We would love to hear from you. Reach out with any questions about our trips, reservations, or your
-                    next adventure.</p>
+        <h1>Contact Dry Oar Rafting</h1>
 
-                <ul class="contact-details">
-                    <li><strong>Address:</strong> 123 River Bend Road, Salmon, ID 83467, USA</li>
-                    <li><strong>Phone:</strong> +1 (208) 555-0123</li>
-                    <li><strong>Email:</strong> info@dryoarrafting.com</li>
-                </ul>
+        <div class="hero">
+            <img src="images/rafting-hero.jpg" alt="People rafting in a river">
 
-                <h3>Find Us on the Map</h3>
-                <div class="map-container">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2719.808089395785!2d-113.895!3d45.175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDUuMTc1LC0xMTMuODk1!5e0!3m2!1sen!2sus!4v1700000000000"
-                        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
-            </section>
-
-            <!-- COLUMNA DERECHA: FORMULARIO -->
-            <section class="contact-form">
-                <h2>Send Us a Message</h2>
-
-                <form action="#" method="post">
-                    <fieldset>
-                        <legend>Your Information</legend>
-
-                        <label for="fullname">Full Name</label>
-                        <input type="text" id="fullname" name="fullname" required>
-
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" required>
-                    </fieldset>
-
-                    <fieldset>
-                        <legend>Purpose of Your Message</legend>
-
-                        <label class="radio-option" for="purpose-general">
-                            <input type="radio" id="purpose-general" name="purpose" value="general" required>
-                            General Inquiry
-                        </label>
-
-                        <label class="radio-option" for="purpose-reservation">
-                            <input type="radio" id="purpose-reservation" name="purpose" value="reservation">
-                            Reservation Question
-                        </label>
-
-                        <label class="radio-option" for="purpose-suggestion">
-                            <input type="radio" id="purpose-suggestion" name="purpose" value="suggestion">
-                            Website Suggestion
-                        </label>
-                    </fieldset>
-
-                    <fieldset>
-                        <legend>Your Message</legend>
-
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-
-                        <label class="checkbox-option" for="subscribe">
-                            <input type="checkbox" id="subscribe" name="subscribe">
-                            Please subscribe me to the monthly newsletter
-                        </label>
-                    </fieldset>
-
-                    <button type="submit">Send Message</button>
-                </form>
-            </section>
+            <article>
+                <h2>Come Ride With Us!</h2>
+                <p>
+                    Dry Oar Rafting offers unforgettable white-water adventures.
+                    Whether you're planning a family trip or an extreme experience,
+                    we're here to help you have the best time on the river.
+                </p>
+            </article>
         </div>
 
-        <section class="employees">
-            <h2>Meet Our River Guides</h2>
-            <div class="employee-grid">
-                <figure>
-                    <img src="images/guide1.jpg" alt="Maria, lead river guide">
-                    <figcaption>Maria — Lead River Guide</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/guide2.jpg" alt="James, safety coordinator">
-                    <figcaption>James — Safety Coordinator</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/guide3.jpg" alt="Lena, customer experience guide">
-                    <figcaption>Lena — Customer Experience Guide</figcaption>
-                </figure>
-            </div>
+        <section>
+            <h2>Why Contact Us?</h2>
+            <p>Use this form to ask questions, reserve a rafting trip, or send suggestions.</p>
         </section>
+
+        <form>
+
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+
+            <fieldset>
+                <legend>Purpose of your message</legend>
+
+                <label class="radio-option">
+                    <input type="radio" id="general" name="purpose" value="general" required>
+                    General Inquiry
+                </label>
+
+                <label class="radio-option">
+                    <input type="radio" id="reservation" name="purpose" value="reservation">
+                    Reservation Question
+                </label>
+
+                <label class="radio-option">
+                    <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                    Website Suggestion
+                </label>
+            </fieldset>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message"></textarea>
+
+            <label class="checkbox-option">
+                <input type="checkbox" id="subscribe" name="subscribe">
+                Please subscribe me to the monthly newsletter
+            </label>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+
+        <section>
+            <h2>Our Location</h2>
+            <p>123 River Road, Salmon, Idaho — USA</p>
+            <img src="images/map.jpg" alt="Map showing location of Dry Oar Rafting"
+                style="width:100%; max-width:500px;">
+        </section>
+
     </main>
 
     <footer>
-        <p>©2025 Dry Oar White Water Rafting | Victor Ruiz</p>
+        <p>© 2025 Dry Oar Rafting | Victor Ruiz</p>
+
         <nav class="socialmedia">
-            <a href="https://facebook.com">
-                <img src="images/facebook.svg" alt="Facebook icon">
-            </a>
-            <a href="https://linkedin.com">
-                <img src="images/linkedin.svg" alt="LinkedIn icon">
-            </a>
-            <a href="https://instagram.com">
-                <img src="images/instagram.svg" alt="Instagram icon">
-            </a>
+            <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="https://youtube.com"><img src="images/youtube.png" alt="YouTube"></a>
         </nav>
     </footer>
 
