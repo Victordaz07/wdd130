@@ -26,26 +26,23 @@ footer {
     margin: 0 auto;
 }
 
-/* HEADER: grid + flex en nav */
+/* HEADER: GRID + NAV FLEX */
 header {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
     padding: 1rem;
-    background-color: var(--primary-color);
+    background: var(--primary-color);
     color: white;
-    border-bottom: 4px solid var(--secondary-color);
 }
 
 .logo {
-    width: 90px;
-    height: auto;
+    width: 80px;
 }
 
 nav ul {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
     gap: 1.5rem;
     list-style: none;
 }
@@ -54,15 +51,6 @@ nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-}
-
-nav a.active {
-    text-decoration: underline;
-}
-
-main {
-    background-color: white;
-    padding-bottom: 2rem;
 }
 
 /* HERO */
@@ -74,94 +62,62 @@ main {
 .hero img {
     width: 100%;
     display: block;
+    height: auto;
 }
 
-.hero-title {
+.hero h1 {
     position: absolute;
-    top: 32px;
-    left: 0;
+    top: 20px;
     width: 100%;
-    padding: 16px 24px;
     text-align: center;
+    padding: 16px;
+    background: rgba(31, 63, 91, 0.8);
+    color: white;
     font-family: var(--heading-font);
     font-size: 2rem;
-    letter-spacing: 1px;
-    background-color: rgba(31, 63, 91, 0.85);
-    color: white;
 }
 
+/* TARJETA SOBRE EL HERO */
 .hero-card {
     position: absolute;
-    right: 40px;
-    bottom: 40px;
+    bottom: 20px;
+    right: 20px;
     width: 260px;
-    padding: 16px;
-    background-color: rgba(255, 255, 255, 0.97);
-    border-radius: 4px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-    display: flex;
-    gap: 12px;
-    align-items: center;
-    color: var(--accent1-color);
+    background: rgba(255, 255, 255, 0.95);
+    padding: 12px;
+    border-radius: 6px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
 }
 
 .hero-card img {
-    width: 90px;
-    height: 90px;
-    object-fit: cover;
-    border-radius: 4px;
-    flex-shrink: 0;
-}
-
-.hero-card p {
-    font-size: 0.9rem;
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 8px;
 }
 
 /* SECCIONES GENERALES */
 section {
-    margin-top: 2.5rem;
+    margin: 2rem 0;
 }
 
-h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
-}
-
-/* HISTORY */
-.history-section {
-    display: grid;
-    grid-template-columns: 2fr 3fr;
-    gap: 24px;
-    align-items: center;
-}
-
-.history-section img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 4px;
-}
-
-.history-text p {
     margin-bottom: 1rem;
 }
 
-/* ADVENTURE */
-.adventure-section h2 {
-    margin-bottom: 1rem;
-}
-
+/* ADVENTURE GRID: 5 FIGURES EN FILA */
 .adventure-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 16px;
+    gap: 1rem;
 }
 
 .adventure-grid figure {
-    background-color: var(--accent2-color);
+    background: white;
     padding: 8px;
-    border-radius: 4px;
+    border-radius: 6px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
@@ -169,25 +125,23 @@ h2 {
     width: 100%;
     height: 140px;
     object-fit: cover;
-    border-radius: 4px;
+    border-radius: 6px;
 }
 
-.adventure-grid figcaption {
-    margin-top: 8px;
-    font-size: 0.9rem;
-    font-weight: bold;
-    color: var(--accent1-color);
+figcaption {
+    margin-top: 6px;
+    font-size: 0.85rem;
 }
 
-/* FOOTER */
+/* FOOTER + SOCIALMEDIA */
 footer {
-    margin-top: 2.5rem;
-    padding: 1.2rem 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--primary-color);
+    margin-top: 3rem;
+    padding: 1rem;
+    background: var(--primary-color);
     color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 footer p {
@@ -198,6 +152,10 @@ footer p {
     display: flex;
     justify-content: flex-end;
     gap: 1rem;
+}
+
+.socialmedia a {
+    text-decoration: none;
 }
 
 .socialmedia img {
