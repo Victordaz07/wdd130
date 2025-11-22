@@ -32,7 +32,7 @@
         <h1>Contact Dry Oar Rafting</h1>
 
         <div class="hero">
-            <img src="images/rafting-hero.jpg" alt="People rafting in a river">
+            <img src="images/rafting-hero.png" alt="People rafting in a river">
 
             <article>
                 <h2>Come Ride With Us!</h2>
@@ -49,15 +49,21 @@
             <p>Use this form to ask questions, reserve a rafting trip, or send suggestions.</p>
         </section>
 
-        <form>
+        <form class="contact-form">
 
-            <label for="fullname">Full Name</label>
-            <input type="text" id="fullname" name="fullname" required>
+            <div class="form-row two-columns">
+                <div class="form-field">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
 
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" required>
+                <div class="form-field">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </div>
 
-            <fieldset>
+            <fieldset class="form-field">
                 <legend>Purpose of your message</legend>
 
                 <label class="radio-option">
@@ -76,22 +82,27 @@
                 </label>
             </fieldset>
 
-            <label for="message">Message</label>
-            <textarea id="message" name="message"></textarea>
+            <div class="form-field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message"></textarea>
+            </div>
 
-            <label class="checkbox-option">
-                <input type="checkbox" id="subscribe" name="subscribe">
-                Please subscribe me to the monthly newsletter
-            </label>
+            <div class="form-field checkbox-field">
+                <label>
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    Please subscribe me to the monthly newsletter
+                </label>
+            </div>
 
             <button type="submit">Send Message</button>
 
         </form>
 
+
         <section>
             <h2>Our Location</h2>
             <p>123 River Road, Salmon, Idaho — USA</p>
-            <img src="images/map.jpg" alt="Map showing location of Dry Oar Rafting"
+            <img src="images/map.png" alt="Map showing location of Dry Oar Rafting"
                 style="width:100%; max-width:500px;">
         </section>
 
@@ -101,9 +112,9 @@
         <p>© 2025 Dry Oar Rafting | Victor Ruiz</p>
 
         <nav class="socialmedia">
-            <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook"></a>
-            <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram"></a>
-            <a href="https://youtube.com"><img src="images/youtube.png" alt="YouTube"></a>
+            <a href="https://facebook.com"><img src="images/facebook.svg" alt="Facebook"></a>
+            <a href="https://instagram.com"><img src="images/instagram.svg" alt="Instagram"></a>
+            <a href="https://youtube.com"><img src="images/youtube.svg" alt="YouTube (placeholder)"></a>
         </nav>
     </footer>
 

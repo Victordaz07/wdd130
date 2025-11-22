@@ -161,3 +161,86 @@ footer p {
 .socialmedia img {
     width: 32px;
 }
+
+.contact-form {
+  margin-top: 1.5rem;
+  background-color: #ffffff;
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-row.two-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.form-field label,
+fieldset legend {
+  font-weight: 600;
+  color: var(--accent1-color);
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+fieldset.form-field {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 0.25rem;
+}
+
+.checkbox-field {
+  margin-top: -0.25rem;
+}
+
+.checkbox-field label {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.contact-form button[type="submit"] {
+  align-self: flex-start;
+  margin-top: 0.5rem;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 0.6rem 1.4rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.contact-form button[type="submit"]:hover {
+  background-color: var(--accent1-color);
+}
